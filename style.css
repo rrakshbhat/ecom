@@ -5,9 +5,13 @@
 }
 
 body {
-    background-image: url('BACKGROUND.jpg') no-repeat center center fixed;
+    background: url('BACKGROUND.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;          
+    height: 100vh;      
+    width: 100vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #e6f0ff;
+
     height: 100vh;
     margin: 0;
     display: flex;
@@ -19,25 +23,37 @@ body {
 
 .container {
     background: white;
+    
     padding: 2.5rem 3rem;
     border-radius: 16px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     width: 400px;
 }
+.transparent-bg-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;            
+    padding: 10px;            
+    display: inline-block;          
+    border-radius: 5px;          
+  }
+  
 .logo img {
-    width: 200px;          /* small size, adjust as needed */
-    height: auto;         /* keep aspect ratio */
-    position: absolute;   /* position relative to nearest positioned parent */
-    top: 0;               /* top left corner */
+    width: 200px;
+    height: auto;      
+    position: absolute;  
+    top: 0;               
     left: 0;
     border-radius: 10%;  
 }
-
+header{
+    background: url('BACKGROUND.jpg') no-repeat center center fixed;
+}
 
 .image {
     max-width: 400px;
     margin: 0 auto 2rem auto; 
     text-align: center; 
+    
 }
 .image img {
     width: 100%; 
@@ -89,9 +105,9 @@ button {
     background-color: #ff9414;
     color: white;
     font-weight: 700;
-    padding: 1rem;
+    padding: 1rem;    background: #e6f0ff;
     border: none;
-    border-radius: 12px;
+    border-radius: 12px;    background: #e6f0ff;
     cursor: pointer;
     font-size: 1.15rem;
     transition: background-color 0.3s ease;
@@ -122,7 +138,7 @@ button:hover {
 
 h1 {
     margin-bottom: 2rem;
-    color: #4a5994;
+    color: #ffffff;
     font-weight: 700;
     font-size: 2.5rem;
 }
@@ -156,6 +172,11 @@ a.signin:hover {
 
 a.signup {
     background-color: #f19e02;
+}
+
+a.signup:hover {
+    background-color: #c87e01;
+    box-shadow: 0 8px 20px rgba(193, 126, 1, 0.5);
 }
 
 a.signup:hover {
